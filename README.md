@@ -6,8 +6,8 @@ Thanks to http://java.dzone.com/articles/setting-hadoop-virtual-cluster for gett
 - This utilizes the Vagrant 1.1 Api so you need to make sure you are on a new version of Vagrant
 - Puppet 3.2.2 or greater is needed
   
-  git@github.com:gizm0duck/vagrant-puppet-hadoop.git
-  cd vagrant-puppet-hadoop
-  vagrant up
+    git@github.com:gizm0duck/vagrant-puppet-hadoop.git
+    cd vagrant-puppet-hadoop
+    vagrant up
 
 That is all
