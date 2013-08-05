@@ -13,11 +13,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.options = "--verbose --debug"
   end
   
-  config.vm.define :master do |master_config|
-    master_config.vm.network :private_network, ip: "192.168.1.10"
-    master_config.vm.hostname = "master"
-  end
-  
   config.vm.define :backup do |backup_config|
     backup_config.vm.network :private_network, ip: "192.168.1.11"
     backup_config.vm.hostname = "backup"
@@ -36,6 +31,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :hadoop3 do |hadoop3_config|
     hadoop3_config.vm.network :private_network, ip: "192.168.1.14"
     hadoop3_config.vm.hostname = "hadoop3"
+  end
+  
+  config.vm.define :master do |master_config|
+    master_config.vm.network :private_network, ip: "192.168.1.10"
+    master_config.vm.hostname = "master"
   end
 
 end
